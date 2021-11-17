@@ -1,6 +1,6 @@
 2 notebooks/codebases are provided:
-  date_based notebook, where train/test are splitted timewise.
-  user_based notebook, where train/test are splitted user_id wise.
+  date_based notebook, where train/test are splitted timewise. (This nb has also proof of execution)
+  user_based notebook, where train/test are splitted user_id wise. (Blank output)
  
 
 experiments
