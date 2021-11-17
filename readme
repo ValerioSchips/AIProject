@@ -1,20 +1,28 @@
+2 notebooks/codebases are provided:
+  date_based notebook, where train/test are splitted timewise.
+  user_based notebook, where train/test are splitted user_id wise.
+ 
+
+experiments
+
 1)
 
-500000 relazioni
+500000 relations
 
 mincount = 5
 
-Basato sulla data
+date based
 
-Split 20%
+Split train test 20%
 
-Split secondario 20%
+Split test future 20%
 
-t = 25
-coppie = 11100
+t = 25 # pairs threshold
+pairs = 11100
 
 lambdaBB, lambdaCC, rho = 500,  5000, 10000
 
+recall 3, 5, 10, 20 ,40
 0.3745621126381029 std error:  0.011466144857725557
 0.3823632444085152 std error:  0.010988839837091709
 0.42286221144345637 std error:  0.01094106011831437
@@ -23,21 +31,22 @@ lambdaBB, lambdaCC, rho = 500,  5000, 10000
 
 2)
 
-500000 relazioni
+500000 relations
 
 mincount = 5
 
-Basato sulla data
+date based
 
-Split 20%
+Split train test 20%
 
-Split secondario 20%
+Split test future 20%
 
 t = 40
-coppie = 4099
+pairs = 4099
 
 lambdaBB, lambdaCC, rho = 500,  5000, 10000
 
+recall 3, 5, 10, 20 ,40
 0.37294529776340607 std error:  0.011424764457277707
 0.382053354890865 std error:  0.011004142220929953
 0.4191291013845581 std error:  0.010905665797721219
@@ -46,21 +55,22 @@ lambdaBB, lambdaCC, rho = 500,  5000, 10000
 
 3)
 
-1000000 relazioni
+1000000 relations
 
 mincount = 5
 
-Basato sulla data
+date based
 
-Split 20%
+Split train test 20%
 
-Split secondario 20%
+Split test future 20%
 
 t = 45
-coppie = 15608
+pairs = 15608
 
 lambdaBB, lambdaCC, rho = 500,  5000, 10000
 
+recall 3, 5, 10, 20 ,40
 0.15417677993527507 std error:  0.0039278511586479025
 0.16062651699029123 std error:  0.0039259443049921225
 0.17754752032285406 std error:  0.004060083199969793
@@ -69,21 +79,22 @@ lambdaBB, lambdaCC, rho = 500,  5000, 10000
 
 4)
 
-500000 relazioni
+500000 relations
 
 mincount = 5
 
-Basato sulla data
+based on user_id
 
-Split 20%
+Split train test 20%
 
-Split secondario 20%
+Split test future 20%
 
 t = 40
-coppie = 11500
+pairs = 11500
 
 lambdaBB, lambdaCC, rho = 500,  5000, 10000
 
+recall 3, 5, 10, 20 ,40
 0.37229702162382694 std error:  0.009884292080970246
 0.3668604651162791 std error:  0.009306008784655432
 0.38964586854733735 std error:  0.008966123594379389
