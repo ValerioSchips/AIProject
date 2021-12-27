@@ -1,0 +1,102 @@
+2 notebooks/codebases are provided:
+  date_based notebook, where train/test are splitted timewise. (This nb has also proof of execution)
+  user_based notebook, where train/test are splitted user_id wise. (Blank output)
+ 
+
+experiments
+
+1)
+
+500000 relations
+
+mincount = 5
+
+date based
+
+Split train test 20%
+
+Split test future 20%
+
+t = 25 # pairs threshold
+pairs = 11100
+
+lambdaBB, lambdaCC, rho = 500,  5000, 10000
+
+recall 3, 5, 10, 20 ,40
+0.3745621126381029 std error:  0.011466144857725557
+0.3823632444085152 std error:  0.010988839837091709
+0.42286221144345637 std error:  0.01094106011831437
+0.48463814163699787 std error:  0.010889549314227535
+0.5586680813759266 std error:  0.01084057227492578
+
+2)
+
+500000 relations
+
+mincount = 5
+
+date based
+
+Split train test 20%
+
+Split test future 20%
+
+t = 40
+pairs = 4099
+
+lambdaBB, lambdaCC, rho = 500,  5000, 10000
+
+recall 3, 5, 10, 20 ,40
+0.37294529776340607 std error:  0.011424764457277707
+0.382053354890865 std error:  0.011004142220929953
+0.4191291013845581 std error:  0.010905665797721219
+0.4810948975914775 std error:  0.010903018546344944
+0.5570302878252976 std error:  0.0108246917989704
+
+3)
+
+1000000 relations
+
+mincount = 5
+
+date based
+
+Split train test 20%
+
+Split test future 20%
+
+t = 45
+pairs = 15608
+
+lambdaBB, lambdaCC, rho = 500,  5000, 10000
+
+recall 3, 5, 10, 20 ,40
+0.15417677993527507 std error:  0.0039278511586479025
+0.16062651699029123 std error:  0.0039259443049921225
+0.17754752032285406 std error:  0.004060083199969793
+0.20384994648740085 std error:  0.0042826530887870445
+0.2291273945078487 std error:  0.004473807412040148
+
+4)
+
+500000 relations
+
+mincount = 5
+
+based on user_id
+
+Split train test 20%
+
+Split test future 20%
+
+t = 40
+pairs = 11500
+
+lambdaBB, lambdaCC, rho = 500,  5000, 10000
+
+recall 3, 5, 10, 20 ,40
+0.37229702162382694 std error:  0.009884292080970246
+0.3668604651162791 std error:  0.009306008784655432
+0.38964586854733735 std error:  0.008966123594379389
+0.437873920653411 std error:  0.009010202674297318
+0.512172425587957 std error:  0.009040965702357502
